@@ -1,0 +1,41 @@
+# Project: Node.js Web Scraper for Job Listings
+
+## Coding Standards
+- Use `async/await` for asynchronous operations (prefer over `.then()`).
+- Use `const` and `let` instead of `var` for variable declarations.
+- Ensure proper error handling using `try/catch` blocks.
+- Write modular and reusable code by splitting functionality into functions.
+
+## Style Guidelines
+- Use 2 spaces for indentation.
+- Max line length: 100 characters.
+- Use camelCase for variables and function names.
+- Ensure code is properly formatted with consistent spacing and indentation.
+
+## Best Practices
+- Make HTTP requests using `axios` with proper headers to mimic real browser requests.
+- Follow good practices for pagination by adjusting the API’s `page` parameter.
+- Extract and process only the necessary fields (e.g., job title, company name, salary).
+- Ensure that JSON data is correctly parsed and saved.
+- Respect the website's `robots.txt` to ensure that scraping is done ethically and legally.
+- Implement a rate-limiting mechanism to avoid overwhelming the target server.
+
+## Testing
+- Write tests for key functions, particularly for handling HTTP requests and JSON parsing.
+- Aim for at least 80% test coverage for the core logic of the scraper.
+- Use tools like `jest` or `mocha` for testing.
+- Ensure that your tests cover edge cases, such as failed requests or missing data.
+
+## Documentation
+- Use JSDoc comments for all functions and key logic to describe their purpose and parameters.
+- Keep `README.md` up-to-date with project setup instructions, including how to configure API endpoints and handle authentication if needed.
+- Document any potential edge cases or limitations of the scraper, such as rate limits or data format changes.
+
+## Legal Considerations
+- Always check and adhere to the website's `robots.txt` file.
+- Be aware of the potential legal risks of scraping and ensure compliance with the website's terms of service.
+- Avoid scraping excessive amounts of data, and ensure the scraper does not negatively impact the website's performance.
+
+---
+
+**Note**: Always test the scraper on a small scale first to ensure that the website's API and terms of service allow it, and that the scraper behaves as expected.
